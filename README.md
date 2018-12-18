@@ -1,4 +1,5 @@
 Software RAID Manager
+
 Authors: Ethan Grefe, Aman Chadha, Aditya Prakash
 
 Objectives
@@ -68,6 +69,7 @@ raidsim -level 10 -strip 5 -disks 10 -size 10000 -trace input.txt
 
 
 Trace file format
+
 The trace file contains a sequence of lines with one command per line. There will be exactly one space between each word in a command. The commands can be:
 
 • READ LBA SIZE - read starting at block LBA for SIZE blocks. Prints out the first 4 byte value in each block, separated by spaces on a single line.
