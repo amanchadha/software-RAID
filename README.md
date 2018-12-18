@@ -1,7 +1,7 @@
 Software RAID Manager
 =====================
 
-Authors: Ethan Grefe, Aman Chadha, Aditya Prakash
+Authors: Aman Chadha, Ethan Grefe, Aditya Prakash
 
 Objectives
 ----------
