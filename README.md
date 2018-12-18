@@ -1,9 +1,10 @@
 Software RAID Manager
+=====================
 
 Authors: Ethan Grefe, Aman Chadha, Aditya Prakash
 
 Objectives
-==========
+----------
 The goals for this project are:
 
 • Develop better understanding of the specifics of different RAID implementations
@@ -13,7 +14,7 @@ The goals for this project are:
 • Understand data recovery strategies
 
 Overview
-=========
+--------
 In this system you will implement a software RAID manager implementing RAID 0 (striping), RAID 1 (mirroring), RAID 4 (fixed parity disk), and RAID 5 (floating parity), and RAID 10 (mirroring + striping). For each strategy, you will implement a RAID manager capable of normal mode operation (no failures), failed-mode operation (working with one failed disk), and recovery (restoring normal mode with a new disk).
 
 
@@ -21,7 +22,7 @@ Rather than assign each of you a set of real disks, we will instead work with vi
 
 
 Details
-=======
+-------
 You will create a simulator program named raidsim.
 
 
@@ -48,7 +49,7 @@ For writes less than a full stripe, you can use additive (read the old blocks an
 
 
 Specification
-=============
+-------------
 Command line parameters (these can come in any order):
 
 • -level [0|10|4|5] specifies the RAID level as 0, 10, 4, or 5
@@ -86,7 +87,7 @@ For each RAID type, your simulator should try to complete as much of a command a
 
 
 Output
-=======
+------
 Your simulator should print the command line from the trace and then execute it, then print the desired output on the following line. After the END command, your simulator should call disk_array_print_stats() to print the statistics for the disks. On read errors, replace the value (which may be one of many in a set of blocks) with the word ERROR. Thus, a read may return a mix of values and an error. On write errors, print ERROR if any blocks of the write cannot be written.
 
 For writes less than a full stripe, you can use additive (read the old blocks and compute new parity) or subtractive (read the old block and old parity) parity. For writes to a full stripe, just write out the data and new parity.
