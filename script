@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -r -f logfile
+
+./test -level 10 -strip 2 -disks 4 -size 4 -trace TRACE >> logfile
+
+cat logfile
