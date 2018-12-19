@@ -1,7 +1,8 @@
 Software RAID Manager
 =====================
-
+C
 Authors: Aman Chadha, Ethan Grefe, Aditya Prakash
+
 
 Objectives
 ----------
@@ -12,6 +13,7 @@ The goals for this project are:
 • Analyze tradeoffs in RAID write strategies
 
 • Understand data recovery strategies
+
 
 Overview
 --------
