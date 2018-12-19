@@ -1,6 +1,6 @@
 Software RAID Manager
 =====================
-C
+
 Authors: Aman Chadha, Ethan Grefe, Aditya Prakash
 
 
