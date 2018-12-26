@@ -1,7 +1,7 @@
 #! /bin/csh -f
 
-set resultDir = results
-set scriptDir = scripts
+set resultDir = ./results
+set scriptDir = ./scripts
 
 set weights = ( 25 25 25 25 ) #6 6 6 6 6 12.5 12.5 12.5 12.5 10 )
 if ($#argv == 1) then
