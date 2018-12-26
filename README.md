@@ -5,7 +5,7 @@ RAID | C
 Authors: Aman Chadha, Ethan Grefe, Aditya Prakash
 
 
-![alt text](https://github.com/amanchadha/software-RAID/blob/master/images/runSample.jpg)
+![alt text](https://github.com/amanchadha/software-RAID/blob/master/images/sampleRun.jpg)
 
 
 Objectives
