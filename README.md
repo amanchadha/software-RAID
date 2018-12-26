@@ -51,7 +51,7 @@ Blocks should be striped in strip size units across N disks, reserving one disk 
 For example, with strip size 1 and 4 disks:
 
 
-![alt text] (https://github.com/amanchadha/software-RAID/blob/master/images/raid5.jpg)
+![alt text](https://github.com/amanchadha/software-RAID/blob/master/images/raid5.jpg)
 
 
 For writes less than a full stripe, you can use additive (read the old blocks and compute new parity) or subtractive (read the old block and old parity) parity. For writes to a full stripe, just write out the data and new parity.
@@ -100,3 +100,8 @@ Output
 Your simulator should print the command line from the trace and then execute it, then print the desired output on the following line. After the END command, your simulator should call disk_array_print_stats() to print the statistics for the disks. On read errors, replace the value (which may be one of many in a set of blocks) with the word ERROR. Thus, a read may return a mix of values and an error. On write errors, print ERROR if any blocks of the write cannot be written.
 
 For writes less than a full stripe, you can use additive (read the old blocks and compute new parity) or subtractive (read the old block and old parity) parity. For writes to a full stripe, just write out the data and new parity.
+
+
+Tests
+-----
+To help with grading your implementation, tests are included.
