@@ -1,0 +1,27 @@
+To get going on the tests, simply copy the files in this folder into your current project 
+directory (where your files are).
+
+After you have copied in all necessary files, to run all the tests, simply type:
+
+  ./run-tests.csh
+
+To run a specific test, type:
+
+  ./run-tests.csh <testNumber>
+
+as in
+
+  ./run-tests.csh 1 
+
+Running a specific test may be useful to debug a particular problem you
+are having. 
+
+Here are the commands the tests are supposed to check:
+
+ 0 ./raidsim -level 0 -strip 2 -disks 6 -size 100 -trace simple-trace.txt -verbose
+ 1 ./raidsim -level 10 -strip 2 -disks 6 -size 100 -trace simple-trace.txt -verbose
+ 2 ./raidsim -level 0 -strip 5 -disks 10 -size 1000 -trace second-trace.txt -verbose
+ 3 ./raidsim -level 10 -strip 5 -disks 10 -size 1000 -trace second-trace.txt -verbose
+
+If, after following these directions you still are not able to pass some or all of the tests,
+please let me know so that we can work out any kinks that may potentially still exist.
