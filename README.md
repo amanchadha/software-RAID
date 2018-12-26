@@ -1,5 +1,4 @@
-Software RAID Manager
-=====================
+# Software RAID Manager
 
 RAID | C
 
@@ -49,6 +48,12 @@ For writes less than a full stripe, you can use additive (read the old blocks an
 
 RAID 5
 Blocks should be striped in strip size units across N disks, reserving one disk for parity. For the first strip, disk 0 should be used for parity, for the second disk 1 etc. For stripe, parity returns to disk 0.
+For example, with strip size 1 and 4 disks:
+
+
+![alt text] (https://github.com/amanchadha/software-RAID/blob/master/images/raid5.jpg)
+
+
 For writes less than a full stripe, you can use additive (read the old blocks and compute new parity) or subtractive (read the old block and old parity) parity. For writes to a full stripe, just write out the data and new parity.
 
 
