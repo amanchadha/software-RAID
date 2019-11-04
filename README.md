@@ -62,7 +62,7 @@ For writes less than a full stripe, you can use additive (read the old blocks an
 
 Specification
 -------------
-Command line parameters (these can come in any order):
+### Command line parameters (these can come in any order):
 
 • -level [0|10|4|5] specifies the RAID level as 0, 10, 4, or 5
 
@@ -78,10 +78,10 @@ Command line parameters (these can come in any order):
 
 All parameters are mandatory except "verbose". A sample command line:
 
-raidsim -level 10 -strip 5 -disks 10 -size 10000 -trace input.txt
+```raidsim -level 10 -strip 5 -disks 10 -size 10000 -trace input.txt```
 
 
-Trace file format
+### Trace file format
 
 The trace file contains a sequence of lines with one command per line. There will be exactly one space between each word in a command. The commands can be:
 
