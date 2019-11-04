@@ -107,4 +107,4 @@ For writes less than a full stripe, you can use additive (read the old blocks an
 
 Tests
 -----
-To help with grading your implementation, tests are included.
+To help with evaluating the implementation, tests are included.
