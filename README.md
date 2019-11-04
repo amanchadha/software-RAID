@@ -1,6 +1,6 @@
 # Software RAID Manager
 
-RAID | C
+```RAID | C```
 
 Authors: Aman Chadha, Ethan Grefe, Aditya Prakash
 
